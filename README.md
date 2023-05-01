@@ -10,6 +10,15 @@
 npm install --save intersection-observer
 ```
 
+## Use case
+In infinite scrolling you can monitor when scroll footer is in viewport. Also it can use to control the re-rendering of component which are not visible in view ports by controlling unnecessary state update
+```jsx
+useEffect(()=>{
+    if(isVisible){
+        setValue(true)
+    }
+},[depState])
+```
 ## Usage
 
 ```jsx
